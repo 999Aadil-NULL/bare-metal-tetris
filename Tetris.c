@@ -1,31 +1,4 @@
-/*
-	 If you are playing this game in CPULATOR use can use keyboard arrows to play,
-	 but in hardware u can only play using the push buttons
-	 
-	 In CPULATOR :-(U can use push buttons as well)
-	 1) After compile load and continue (F5 followed by F3)
-	 2)Click on the "Type here" in PS2/Keyboard or mouse option in cpulator at ff200100
-	 3)Now right and left key board options can be used to by pressing to move the active piece left and right
-	 4)We use up key for rotationg the 4 * 4 piece
-	 5)By pressing and holding the down of keyboard the piece will fall down faster.
-	 6)Click on push button 3 to restart the game 
-	 7) After restarted click on any of the push buttons to continue the game again
-	 
-	 In Hardware :- 
-	 1)0 button to move left
-	 2)1 button to move right
-	 3)2 button to rotate the piece
-	 3)3 button to restart 
-	 
-	 Buttons work on falling edge so u need to press and remove the button to show the effect.
-	 
-	 
-	 The pieces are architecutured with the legacy principles where each piece fit in 4 * 4 block 
-	 and audio also features the legacy 8 bit tetris theme.
-*/
-/* For printing onto Terminal */
 #include <stdio.h>
-/* For using rand function to generate a random piece */
 #include <stdlib.h>
 
 #define CHAR_BUF_BASE 0xC9000000
